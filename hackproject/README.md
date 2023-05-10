@@ -15,7 +15,7 @@ On the same terminal window, change into the a11y-theme-builder submodule folder
 ```shell
 cd hackproject/code/api-server-modernization/a11y-theme-builder/code
 echo -n "" > src/data/themes
-npm run build-api
+npm run build
 npm run start:fastify
 ```
 
