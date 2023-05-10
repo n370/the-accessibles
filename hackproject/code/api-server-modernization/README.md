@@ -1,56 +1,32 @@
-## Test results
+# Theme Builder API server modernization
+
+## How to run
+
+Open a new terminal window at the root of this hackathon submission repository and run:
 
 ```shell
-> a11y-theme-builder@1.0.0 test
-> ts-node src/test.ts
+git submodule update --init
+```
 
-getDocNames = []
-getDoc = {
-  statusCode: 404,
-  error: 'Not Found',
-  message: `document '"abc"' was not found`
-}
-createDoc = { id: 'abc', themedata: '123', color: { primary: 'red' } }
-createDoc = {
-  statusCode: 502,
-  error: 'Bad Gateway',
-  message: 'document already exists'
-}
-getDoc = { id: 'abc', themedata: '123', color: { primary: 'red' } }
-createDoc = { id: 'def', themedata: '456', color: { primary: 'blue' } }
-getDoc = { id: 'def', themedata: '456', color: { primary: 'blue' } }
-getDocNames = [ 'abc', 'def' ]
-updateDoc = true
-getDoc = { themedata: '4567', color: { primary: 'green' }, id: 'def' }
-updateDoc = {
-  themedata: '4567',
-  color: { primary: 'brown', secondary: 'black' },
-  id: 'def'
-}
-getDoc = { color: { primary: 'brown', secondary: 'black' } }
-getDoc = { color: { primary: 'brown' } }
-deleteDoc = { id: 'abc', themedata: '123', color: { primary: 'red' } }
-getDoc = {
-  statusCode: 404,
-  error: 'Not Found',
-  message: `document '"abc"' was not found`
-}
-getDocNames = [ 'def' ]
-postDoc = {
-  statusCode: 501,
-  error: 'Not Implemented',
-  message: 'Not Implemented'
-}
-deleteDoc = {
-  themedata: '4567',
-  color: { primary: 'brown', secondary: 'black' },
-  id: 'def'
-}
-getDoc = {
-  statusCode: 404,
-  error: 'Not Found',
-  message: `document '"def"' was not found`
-}
-getDocNames = []
->>> PASSED <<<
+On the same terminal window, change into the a11y-theme-builder submodule folder, clear the database file, run the usual dev environment setup and start the Fastify api server.
+
+```shell
+cd hackproject/code/api-server-modernization/a11y-theme-builder/code
+echo -n "" > src/data/themes
+npm run build
+npm run start:fastify
+```
+
+Open another terminal window on the same directory and run the api tests.
+
+```shell
+cd hackproject/code/api-server-modernization/a11y-theme-builder/code
+npm test
+```
+
+Finally, revert the changes made to the original database file.
+
+```shell
+cd hackproject/code/api-server-modernization/a11y-theme-builder/code
+git checkout src/data/themes
 ```
