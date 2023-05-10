@@ -1,6 +1,9 @@
 const merge = require('lodash/merge')
 const tokens = require('./generated-tokens-replace-with-theme-builder-json.json')
 
+// When copying the JSON from the theme-builder CODE tab, the "Core-Colors" are missing.
+// Add them here.
+// I've only added the colors used by the "Sample" theme.
 const coreColors = {
   "Core-Colors": {
     White: {
@@ -42,6 +45,9 @@ const coreColors = {
   }
 }
 
+// The "Theme-Colors" are missing too.
+// Add them here.
+// I've only added the colors used by the "Sample" theme.
 const themeColors = {
   'Theme-Colors': {
     Primary: {
@@ -59,6 +65,9 @@ const themeColors = {
   }
 }
 
+// The "Elevation-Shadows" are missing too.
+// Add them here.
+// I've only added the values used by the "Sample" theme.
 const elevationShadows = {
   'Elevation-Shadows': {
     'elevation-0': {
@@ -73,6 +82,9 @@ const elevationShadows = {
   }
 }
 
+// The "Bevels" are missing too.
+// Add them here.
+// I've only added the values used by the "Sample" theme.
 const bevels = {
   'Bevels': {
     'bevel-0': {
@@ -81,8 +93,13 @@ const bevels = {
   }
 }
 
+// Finally, the generated JSON has references to "spacing" that appears to be a typo.
+// Replace "spacing" with "Spacing" so that the references can be resolved.
 const fixedTokens = {
+  // Include _all_ of the original tokens
   ...tokens,
+
+  // Add Spacing, fixing the typo
   Spacing: Object.fromEntries(
     Object.entries(tokens.Spacing).map(
       ([key, spacing]) => {
@@ -92,11 +109,11 @@ const fixedTokens = {
   )
 }
 
+// Merge all of the above together to create a set of tokens that has no missing values.
 module.exports = merge(
   {},
   coreColors,
   themeColors,
-  // spacing,
   elevationShadows,
   bevels, 
   fixedTokens
