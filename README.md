@@ -13,7 +13,8 @@
 
 ### Theme Builder API server modernization
 
-After reading through the Theme Builder source code our team identified an opportunity to improve the backend server by changing the underlying technology being used to build it. [Fastify](https://www.fastify.io/) is a modern open-source Node.js web server framework with first class Typescript support and a vibrant community.
+After reading through the Theme Builder source code our team identified an opportunity to modernize the tech stack, the backend server specifically, by changing the underlying technology used to build it. [Fastify](https://www.fastify.io/) is a modern open-source Node.js web server framework with first-class Typescript support and a vibrant community. It uses modern coding techniques to improve the developer experience, has a plugin architecture that encourages good design and separation of concerns, and most of all it is fast... very fast!
+
 ### Style Dictionary integration
 
 After looking at the currently available output formats, JSON and CSS, our team identified an opportunity to rapidly expand the available formats of the generated design tokens. By leveraging the team's previous experience building design systems, we decided to use the open source tool [Style Dictionary](https://amzn.github.io/style-dictionary/#/) to generate design tokens that can be consumed by many platforms, including Android, iOS, web, JS, and more. This could have a massive impact on the adoption of the theme builder by generating design tokens for many platforms.
