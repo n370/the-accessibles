@@ -1,7 +1,7 @@
-# API server modernization and Style Dictionary integration
+# API server modernization and Cross-platform token adapter
 
 ## Operation instructions
 
 ### Theme Builder API server modernization
 
-### Style Dictionary integration
+### Cross-platform token adapter
