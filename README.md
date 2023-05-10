@@ -1,56 +1,27 @@
-<!---  Submission Readme Instructions  
-  Remove the warning below.
---->
-![warning](./challenges/challenge1/usecase/images/misc/warning.png) Before submitting your project repo, modify this README as instructed to meet the expectations of the judges.
-
-
-<!---  Submission Readme Instructions  
-  Welcome to the FINOS GAAD Hackathon!
-
-  This GitHub Repo represents a template for your project. It represents the central repository of all artifacts produced by your team. This repository will be referenced during the judging activity and after the event has completed.
-
-  Please follow the Template Instructions herein to update this README.
-
-  Remember to:
-    a) Remove all Template Instructions once complete.
-    b) Add the mandatory GitHub Topics.
---->
- 
-# Project Name
-<!--- Template Instructions  
-  Each Participating Team will have a unique name. Each Team will create a unique name for their project. Replace above "Project Name" with Participating Team Project Name which is different from the Team Name.
---->
+# API server modernization and Style Dictionary integration
 
 ## Project Details
-<!--- Template Instructions  
-  Provide your team specific details:
-
-    Challenge should have a numeric value {1, 2, etc}.
-
-    Event Track should have one of the following values: "Hack the Code", "Design Thinking", "Not Applicable".
---->
 
 | Event Attribute| Description |
 | --- | --- |
-| Project Team Name | xxxxxxxx |
-| Project Name | xxxxxxxx |
-| Challenge | xxxxxxxx |
-| Event Track | xxxxxxxx |
+| Project Team Name | The Accessibles |
+| Project Name | API server modernization and Style Dictionary integration |
+| Challenge | 1 |
+| Event Track | Hack the Code |
 
 ## Use Case Abstract
-<!--- Template Instructions  
-  Provide a brief description of the use case tackled by the team.
---->
+
+### Theme Builder API server modernization
+
+After reading through the Theme Builder source code our team identified an opportunity to modernize the tech stack, the backend server specifically, by changing the underlying technology used to build it. [Fastify](https://www.fastify.io/) is a modern open-source Node.js web server framework with first-class Typescript support and a vibrant community. It uses modern coding techniques to improve the developer experience, has a plugin architecture that encourages good design and separation of concerns, and most of all it is fast... very fast!
+
+### Style Dictionary integration
+
+After looking at the currently available output formats, JSON and CSS, our team identified an opportunity to rapidly expand the available formats of the generated design tokens. By leveraging the team's previous experience building design systems, we decided to use the open source tool [Style Dictionary](https://amzn.github.io/style-dictionary/#/) to generate design tokens that can be consumed by many platforms, including Android, iOS, web, JS, and more. This could have a massive impact on the adoption of the theme builder by generating design tokens for many platforms.
 ## Project Artifacts
 <!--- Template Instructions  
   Complete the table below. Replace URLs where necessary.
 
-    1. Use Case: Markdown file describing the story with support by UML diagrams. Remember to update filename if you renamed the original template.
-    2. Visual Collaboration Board Details: Provide a link to the teams Board and/or export the whiteboard used for team brainstorming and provide link to file or folder where the artifacts are persisted. Since FREE Boards may not be available long term you should consider both options.   
-    3. Design Thinking Playback Brief: PowerPoint Presentation used to convey results of Design Thinking activities and record Pitch Video.
-    4. Concept Playback Pitch Video: URL to Pitch Video recording conveying project problem statement and What/Why/Wow elements.
-    5. Concept Show-n-Tell Video: URL Recording of a running solution to the proposed concept. 
-    6. Code: URL to the code Readme file. 
 
     WARNINGS: 
     1. Judges will stop listening to Pitch Video after the 2 minute mark so do not exceed the limit.
@@ -76,14 +47,15 @@
 2. [BDR 01](./decisions/bdr-01.md)
 
 ## Team Information
+
 <!--- Template Instructions  
   Provide a brief description of your team, how it came to be, etc.
 --->  
 
-Our team members came together because ...
- 
+Our team members came together because we share a passion for accessibility, design systems, and the modernization of tech stacks. We believe that these combined passions give our team a competitive advantage and the strength to make hackathon contributions with a real impact!
+
 | Name | Organization |
 | --- | --- |
-| [Name](social-url) | ??? |
-| [Name](social-url) | ??? |
-
+| [Dylson Valente Neto](https://github.com/n370) | Individual Contributor |
+| [Cody Zuschlag](https://github.com/codyzu) | Individual Contributor |
+| [Novedeep Kaur](https://github.com/knovedeep) | Individual Contributor |
