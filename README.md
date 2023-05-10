@@ -52,7 +52,7 @@ After looking at the currently available output formats, JSON and CSS, our team 
   Provide a brief description of your team, how it came to be, etc.
 --->  
 
-Our team members came together because ...
+Our team members came together because we share a passion for accessibility, design systems, and the modernization of tech stacks. We believe that these combined passions give our team a competitive advantage and the strength to make hackathon contributions with a real impact!
 
 | Name | Organization |
 | --- | --- |
